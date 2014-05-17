@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @space.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @space.state %>
+</p>
+
+<p>
+  <strong>Laser cutter:</strong>
+  <%= @space.laser_cutter %>
+</p>
+
+<p>
+  <strong>3d printer:</strong>
+  <%= @space.3d_printer %>
+</p>
+
+<p>
+  <strong>Cnc router:</strong>
+  <%= @space.cnc_router %>
+</p>
+
+<p>
+  <strong>Sewing maching:</strong>
+  <%= @space.sewing_maching %>
+</p>
+
+<p>
+  <strong>Microcontroller library:</strong>
+  <%= @space.microcontroller_library %>
+</p>
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>

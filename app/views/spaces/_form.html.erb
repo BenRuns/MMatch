@@ -1,0 +1,45 @@
+<%= form_for(@space) do |f| %>
+  <% if @space.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@space.errors.count, "error") %> prohibited this space from being saved:</h2>
+
+      <ul>
+      <% @space.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :laser_cutter %><br>
+    <%= f.check_box :laser_cutter %>
+  </div>
+  <div class="field">
+    <%= f.label :3d_printer %><br>
+    <%= f.check_box :3d_printer %>
+  </div>
+  <div class="field">
+    <%= f.label :cnc_router %><br>
+    <%= f.check_box :cnc_router %>
+  </div>
+  <div class="field">
+    <%= f.label :sewing_maching %><br>
+    <%= f.check_box :sewing_maching %>
+  </div>
+  <div class="field">
+    <%= f.label :microcontroller_library %><br>
+    <%= f.check_box :microcontroller_library %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
