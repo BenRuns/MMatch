@@ -1,0 +1,41 @@
+<%= form_for(@maker) do |f| %>
+  <% if @maker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@maker.errors.count, "error") %> prohibited this maker from being saved:</h2>
+
+      <ul>
+      <% @maker.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :space %><br>
+    <%= f.text_field :space %>
+  </div>
+  <div class="field">
+    <%= f.label :tools %><br>
+    <%= f.text_field :tools %>
+  </div>
+  <div class="field">
+    <%= f.label :skills %><br>
+    <%= f.text_field :skills %>
+  </div>
+  <div class="field">
+    <%= f.label :bio %><br>
+    <%= f.text_area :bio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

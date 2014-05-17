@@ -1,0 +1,37 @@
+<h1>Listing makers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Space</th>
+      <th>Tools</th>
+      <th>Skills</th>
+      <th>Bio</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @makers.each do |maker| %>
+      <tr>
+        <td><%= maker.name %></td>
+        <td><%= maker.location %></td>
+        <td><%= maker.space %></td>
+        <td><%= maker.tools %></td>
+        <td><%= maker.skills %></td>
+        <td><%= maker.bio %></td>
+        <td><%= link_to 'Show', maker %></td>
+        <td><%= link_to 'Edit', edit_maker_path(maker) %></td>
+        <td><%= link_to 'Destroy', maker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Maker', new_maker_path %>

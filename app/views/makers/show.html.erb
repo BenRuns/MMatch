@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @maker.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @maker.location %>
+</p>
+
+<p>
+  <strong>Space:</strong>
+  <%= @maker.space %>
+</p>
+
+<p>
+  <strong>Tools:</strong>
+  <%= @maker.tools %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @maker.skills %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @maker.bio %>
+</p>
+
+<%= link_to 'Edit', edit_maker_path(@maker) %> |
+<%= link_to 'Back', makers_path %>
