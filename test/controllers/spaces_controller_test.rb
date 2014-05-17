@@ -18,7 +18,7 @@ class SpacesControllerTest < ActionController::TestCase
 
   test "should create space" do
     assert_difference('Space.count') do
-      post :create, space: { 3d_printer: @space.3d_printer, city: @space.city, cnc_router: @space.cnc_router, laser_cutter: @space.laser_cutter, microcontroller_library: @space.microcontroller_library, sewing_maching: @space.sewing_maching, state: @space.state }
+      post :create, space: { city: @space.city, cnc_router: @space.cnc_router, laser_cutter: @space.laser_cutter, microcontroller_library: @space.microcontroller_library, sewing_maching: @space.sewing_maching, state: @space.state, three_d_printer: @space.three_d_printer }
     end
 
     assert_redirected_to space_path(assigns(:space))
@@ -35,7 +35,7 @@ class SpacesControllerTest < ActionController::TestCase
   end
 
   test "should update space" do
-    patch :update, id: @space, space: { 3d_printer: @space.3d_printer, city: @space.city, cnc_router: @space.cnc_router, laser_cutter: @space.laser_cutter, microcontroller_library: @space.microcontroller_library, sewing_maching: @space.sewing_maching, state: @space.state }
+    patch :update, id: @space, space: { city: @space.city, cnc_router: @space.cnc_router, laser_cutter: @space.laser_cutter, microcontroller_library: @space.microcontroller_library, sewing_maching: @space.sewing_maching, state: @space.state, three_d_printer: @space.three_d_printer }
     assert_redirected_to space_path(assigns(:space))
   end
 

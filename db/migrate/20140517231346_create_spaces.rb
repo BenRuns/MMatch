@@ -4,7 +4,7 @@ class CreateSpaces < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.boolean :laser_cutter
-      t.boolean :3d_printer
+      t.boolean :three_d_printer
       t.boolean :cnc_router
       t.boolean :sewing_maching
       t.boolean :microcontroller_library

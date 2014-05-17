@@ -4,7 +4,7 @@ one:
   city: MyString
   state: MyString
   laser_cutter: false
-  3d_printer: false
+  three_d_printer: false
   cnc_router: false
   sewing_maching: false
   microcontroller_library: false
@@ -13,7 +13,7 @@ two:
   city: MyString
   state: MyString
   laser_cutter: false
-  3d_printer: false
+  three_d_printer: false
   cnc_router: false
   sewing_maching: false
   microcontroller_library: false

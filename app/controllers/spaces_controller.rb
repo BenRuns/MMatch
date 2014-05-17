@@ -69,6 +69,6 @@ class SpacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def space_params
-      params.require(:space).permit(:city, :state, :laser_cutter, :3d_printer, :cnc_router, :sewing_maching, :microcontroller_library)
+      params.require(:space).permit(:city, :state, :laser_cutter, :three_d_printer, :cnc_router, :sewing_maching, :microcontroller_library)
     end
 end
