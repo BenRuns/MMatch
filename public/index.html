@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
@@ -50,7 +50,7 @@
               Joe Thinker
              <!--  <input type="password" placeholder="Password" class="form-control"> -->
             </div>
-            <button type="submit" class="btn btn-success">Sign Out </button>
+            <div class="form-group navbar-brand">Sign Out </div>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -59,43 +59,40 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        
+        <img src="./asset/MakerMatchIcon.png" class="frontlogo FrontIcon"></img> 
   
-        <p><img src="./asset/MakerMatchLogo.png" class="frontlogo"></img></p>
+        <p><div class="frontlogo"></img>Maker Match</div></p>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-5">
-          <h2>Mission Statement</h2>
-          <p> Our goal is to manage the flow of ideas from thinkers to doers. To guide an idea from cocktail napkin to showroom</p>
-          <p><a href="mission.html" class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-5">
+
+        <div class="col-md-5 thinkers">
           <h2>Thinkers</h2>
           <p>Here’s the guide you need for your entire design process. We’re always here to serve you.</p>
-          <p><a class="btn btn-default" href="#" role="button">Realize an idea! &raquo;</a></p>
+          <p><a class="btn btn-default" href="thinker.html" role="button">Realize an idea! &raquo;</a></p>
         </div>
 
-        <!-- <div class="col-md-5">
-          <h2>Makers</h2>
-          <p>TODO put info about makers here</p>
-          <p><a class="btn btn-default" href="#" role="button">Make something! &raquo;</a></p>
-        </div> -->
 
-        <div class="col-md-5">
+
+        <div class="col-md-5 makers">
           <h2>Makers</h2>
           <p> You can view the best matches between the thinkers and makers on our platform. Stay connected!</p>
           <p><a href="http://mmatch.herokuapp.com/spaces" class="btn btn-default" href="#" role="button">View dashboard &raquo;</a></p>
+        </div>
+        <div class="col-md-5 mission">
+          <h2>Mission Statement</h2>
+          <p> Our goal is to manage the flow of ideas from thinkers to doers. To guide an idea from cocktail napkin to showroom</p>
+          <p><a href="mission.html" class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; MakerMatch 2014</p>
       </footer>
     </div> <!-- /container -->
 
