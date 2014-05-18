@@ -9,7 +9,21 @@ class SpacesController < ApplicationController
 
   # GET /spaces/search
   def search
-    @spaces = Space.all
+    @params = params
+    laser_cutter = params[:laser_cutter].present?
+    three_d_printer = params[:three_d_printer].present?
+    cnc_router = params[:cnc_router].present?
+    sewing_maching = params[:sewing_maching].present?
+    microcontroller_library = params[:microcontroller_library].present?
+    # state = params[:state] if !params[:state].blank?
+    # city = params[:city] if !params[:city].blank?
+    @spaces = Space.where(
+            laser_cutter: laser_cutter,
+            three_d_printer: three_d_printer,
+            cnc_router: cnc_router,
+            sewing_maching: sewing_maching,
+            microcontroller_library: microcontroller_library
+      )
   end
 
   # GET /spaces/1
