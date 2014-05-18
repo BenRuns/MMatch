@@ -94,4 +94,7 @@ body {
   .designPhoto{
     box-shadow: 2px 3px 5px #888888;
   }
+  .navbar-fixed-top {
+height:30px;
+}
 }
