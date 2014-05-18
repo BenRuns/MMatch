@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h2>Location:</h2>
+
 <p>
   <strong>City:</strong>
   <%= @space.city %>
@@ -10,30 +12,43 @@
   <%= @space.state %>
 </p>
 
-<p>
-  <strong>Laser cutter:</strong>
-  <%= @space.laser_cutter %>
-</p>
 
-<p>
-  <strong>Three d printer:</strong>
-  <%= @space.three_d_printer %>
-</p>
+<br />
+<br />
+<br />
+<br />
 
-<p>
-  <strong>Cnc router:</strong>
-  <%= @space.cnc_router %>
-</p>
+<h2>Features:</h2>
 
+<% if @space.laser_cutter %>
 <p>
-  <strong>Sewing maching:</strong>
-  <%= @space.sewing_maching %>
+  <strong>Laser Cutter</strong>
 </p>
+<% end %>
 
+<% if @space.three_d_printer %>
 <p>
-  <strong>Microcontroller library:</strong>
-  <%= @space.microcontroller_library %>
+  <strong>3D Printer</strong>
 </p>
+<% end %>
+
+<% if @space.cnc_router %>
+<p>
+  <strong>CNC Router</strong>
+</p>
+<% end %>
+
+<% if @space.sewing_maching %>
+<p>
+  <strong>Sewing Machine</strong>
+</p>
+<% end %>
+
+<% if @space.microcontroller_library %>
+<p>
+  <strong>Microcontroller Library</strong>
+</p>
+<% end %>
 
 <%= link_to 'Edit', edit_space_path(@space) %> |
 <%= link_to 'Back', spaces_path %>
