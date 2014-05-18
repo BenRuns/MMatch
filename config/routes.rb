@@ -1,6 +1,9 @@
 MakerMatch::Application.routes.draw do
   resources :spaces
 
+  get "search" => 'spaces#search'
+
+
   resources :makers
 
   get "pages/home"

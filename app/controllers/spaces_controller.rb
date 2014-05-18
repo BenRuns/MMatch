@@ -7,6 +7,11 @@ class SpacesController < ApplicationController
     @spaces = Space.all
   end
 
+  # GET /spaces/search
+  def search
+    @spaces = Space.all
+  end
+
   # GET /spaces/1
   # GET /spaces/1.json
   def show
@@ -69,6 +74,10 @@ class SpacesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def space_params
+      params.require(:space).permit(:city, :state, :laser_cutter, :three_d_printer, :cnc_router, :sewing_maching, :microcontroller_library)
+    end
+
+    def search_params
       params.require(:space).permit(:city, :state, :laser_cutter, :three_d_printer, :cnc_router, :sewing_maching, :microcontroller_library)
     end
 end
