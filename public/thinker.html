@@ -28,7 +28,7 @@
   </head>
 
   <body>
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,18 +42,19 @@
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
             <div class="form-group navbar-brand">
-              <a href="dashboard.html"> Dashboard </a>
+              <a href="http://mmatch.herokuapp.com/spaces"> Dashboard </a>
              <!--  <input type="text" placeholder="Email" class="form-control"> -->
             </div>
             <div class="form-group navbar-brand">
-              Joe Thinker
+              N Tesla
              <!--  <input type="password" placeholder="Password" class="form-control"> -->
             </div>
-            <button type="submit" class="btn btn-success">Sign Out </button>
+            <div class="form-group navbar-brand">Sign Out </div>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
+
 
     <div class="container">
       <div class="header">
@@ -65,33 +66,39 @@
         <h3 class="text-muted">Maker Match</h3>
       </div>
 
-      <div class="jumbotron">
-        <h1>Design Stages</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      <div class="jumbotron designstages">
+        <img src="asset/DesignProcessIcon .png" alt"the design proccess" class="processhead">
+ 
       </div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
-          <img src="asset/napkinIcon.png" class="designPhoto"  alt="Idea Written on a Cocktail Napkin" height="170" width="170">
+        <div class="col-lg-6 ">
+          <img src="asset/napkinIcon.png" class="designPhoto"  alt="Idea Written on a Cocktail Napkin" >
 
         <!--   <h4><img src="./asset/NapkinIcon.png"></h4>
           <p>You’ve made detailed specifications.  All of your supplies are listed and you have you’re pretty sure you what tools are needed to build it. Click here if you just need to find someone with the tools and drive to bring your idea into reality.</p> -->
 
-           <img src="asset/Blueprinticon.png" class="designPhoto" alt="design blueprints" height="170" width="170">
+           <img src="asset/Blueprinticon.png" class="designPhoto" alt="design blueprints" >
            <img src="asset/BatchProduction.png" class="designPhoto" alt="Batch  " >
         </div>
 
         <div class="col-lg-6">
-          <h4>Simple Design</h4>
-          <p>You have a great idea and need to get it started. Choose this option if you need design assistance. You can get feedback on the feasibility of your idea and what is needed to develop.</p>
+          <div class="explaination">
+            <h4>Simple Design</h4>
+            <p>You have a great idea and need to get it started. Choose this option if you need design assistance. You can get feedback on the feasibility of your idea and what is needed to develop.</p>
+          </div>
+          <div class="explaination">
 
-          <h4>Advanced Design</h4>
-          <p>You’ve made detailed specifications.  All of your supplies are listed and you have you’re pretty sure you what tools are needed to build it. Click here if you just need to find someone with the tools and drive to bring your idea into reality.</p>
+            <h4>Advanced Design</h4>
+            <p>You’ve made detailed specifications.  All of your supplies are listed and you have you’re pretty sure you what tools are needed to build it. Click here if you just need to find someone with the tools and drive to bring your idea into reality.</p>
+          </div>
 
-          <h4>Batch Production</h4>
-          <p> Maker Match can take your finished workable prototype, an blueprint or an 3D printer schematic
-          and find a reliable maker that can manufacture your product in scalable batch orders.</p>
+          <div class="explaination">
+
+              <h4>Batch Production</h4>
+              <p> Maker Match can take your finished workable prototype, an blueprint or an 3D printer schematic
+              and find a reliable maker that can manufacture your product in scalable batch orders.</p>
+          </div>
         </div>
       </div>
 
