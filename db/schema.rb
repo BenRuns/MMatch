@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140517223009) do
+ActiveRecord::Schema.define(version: 20140517231346) do
 
   create_table "makers", force: true do |t|
     t.string   "name"
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(version: 20140517223009) do
     t.string   "tools"
     t.string   "skills"
     t.text     "bio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spaces", force: true do |t|
+    t.string   "city"
+    t.string   "state"
+    t.boolean  "laser_cutter"
+    t.boolean  "three_d_printer"
+    t.boolean  "cnc_router"
+    t.boolean  "sewing_maching"
+    t.boolean  "microcontroller_library"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

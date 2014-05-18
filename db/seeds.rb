@@ -11,12 +11,6 @@
 #  Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-spaces = Space.create([{
-Seattle WA  false true  false true  false
-Phoenix Arizona true  true  false false true
-New York City NY  false false false false true
-Jacksonville  FL  false false false true  true
-
 Space.create (name: 'Jigsaw Renaissance', city: 'Seattle', state: 'WA', laser_cutter: true, three_d_printer: true, cnc_router: true, sewing_maching: true, microcontroller_library: true)
 Space.create (name: 'Maker Labs',         city: 'Seattle', state: 'WA', laser_cutter: false, three_d_printer: true, cnc_router: true, sewing_maching: true, microcontroller_library: false)
 Space.create (name: 'Boss Labs',          city: 'Seattle', state: 'WA', laser_cutter: false, three_d_printer: false, cnc_router: true, sewing_maching: false, microcontroller_library: false)
