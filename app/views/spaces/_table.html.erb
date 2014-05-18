@@ -1,0 +1,64 @@
+<table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Laser Cutter</th>
+                <th>3D Printer</th>
+                <th>CNC Router</th>
+                <th>Sewing Maching</th>
+                <th>Microcontroller Library</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @spaces.each do |space| %>
+                <tr>
+                  <td><%= space.name %></td>
+                  <td><%= space.city %></td>
+                  <td><%= space.state %></td>
+                  <td>
+                    <% if space.laser_cutter %>
+                      <%= image_tag "check.jpg", width: 15, height: 15  %>
+                    <% else %>
+                     <%= image_tag "empty.jpg", width: 15, height: 15  %>
+                    <% end %>
+                 </td>
+                  <td>
+                    <% if space.three_d_printer  %>
+                      <%= image_tag "check.jpg", size: "15"  %>
+                    <% else %>
+                     <%= image_tag "empty.jpg", size: "15" %>
+                    <% end %>
+                 </td>
+                  <td>
+                    <% if space.cnc_router  %>
+                      <%= image_tag "check.jpg", size: "15"  %>
+                    <% else %>
+                     <%= image_tag "empty.jpg", size: "15" %>
+                    <% end %>
+                 </td>
+                  <td>
+                    <% if space.sewing_maching  %>
+                      <%= image_tag "check.jpg", size: "15"  %>
+                    <% else %>
+                     <%= image_tag "empty.jpg", size: "15" %>
+                    <% end %>
+                 </td>
+                  <td>
+                    <% if space.microcontroller_library  %>
+                      <%= image_tag "check.jpg", size: "15"  %>
+                    <% else %>
+                     <%= image_tag "empty.jpg", size: "15" %>
+                    <% end %>
+                 </td>
+                  <td>
+                    <%= link_to 'Show', space %></td>
+                  </td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
