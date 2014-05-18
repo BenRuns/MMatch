@@ -76,12 +76,22 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
-  .designPhoto {
+  .designPhoto,.explaination{
 
   height:170px;
-  width:170px;
+ 
   border-radius: 10px;
+  margin: 5px;
   
 
+  }
+  .processhead {
+    width:500px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px #888888;
+    
+  }
+  .designPhoto{
+    box-shadow: 2px 3px 5px #888888;
   }
 }
