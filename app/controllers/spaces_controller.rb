@@ -25,7 +25,6 @@ class SpacesController < ApplicationController
     @spaces = @spaces.where(microcontroller_library: microcontroller_library) if microcontroller_library
     @spaces = @spaces.where(city: city) if !params[:city].blank?
     @spaces = @spaces.where(state: state) if !params[:state].blank?
-
   end
 
   # GET /spaces/1
