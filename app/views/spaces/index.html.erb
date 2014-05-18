@@ -62,11 +62,11 @@
         <td><%= space.name %></td>
         <td><%= space.city %></td>
         <td><%= space.state %></td>
-        <td><%= space.laser_cutter ? "yes" : "no"  %></td>
-        <td><%= space.three_d_printer  ? "yes" : "no" %></td>
-        <td><%= space.cnc_router  ? "yes" : "no" %></td>
-        <td><%= space.sewing_maching  ? "yes" : "no" %></td>
-        <td><%= space.microcontroller_library  ? "yes" : "no" %></td>
+        <td><%= space.laser_cutter ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10"  %></td>
+        <td><%= space.three_d_printer  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
+        <td><%= space.cnc_router  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
+        <td><%= space.sewing_maching  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
+        <td><%= space.microcontroller_library  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
 
         <td><%= link_to 'Show', space %></td>
         </td>
