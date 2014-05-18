@@ -76,4 +76,11 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+  .designPhoto {
+
+  height:170px;
+  width:170px;
+  border-radius: 10px;
+
+  }
 }

@@ -3,3 +3,9 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+.designPhoto {
+
+	height:170;
+	width: 170;
+	margin: auto;
+}
