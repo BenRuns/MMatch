@@ -9,15 +9,14 @@
       <th>CNC Router</th>
       <th>Sewing Maching</th>
       <th>Microcontroller Library</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
     <% @spaces.each do |space| %>
       <tr>
-        <td><%= space.name %></td>
+        <td>
+          <%= link_to space.name, space %></td>
+        </td>
         <td><%= space.city %></td>
         <td><%= space.state %></td>
         <td>
@@ -55,9 +54,6 @@
            <%= image_tag "empty.jpg", size: "15" %>
           <% end %>
        </td>
-        <td>
-          <%= link_to 'Show', space %></td>
-        </td>
       </tr>
     <% end %>
   </tbody>
