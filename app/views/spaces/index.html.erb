@@ -62,13 +62,43 @@
         <td><%= space.name %></td>
         <td><%= space.city %></td>
         <td><%= space.state %></td>
-        <td><%= space.laser_cutter ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10"  %></td>
-        <td><%= space.three_d_printer  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
-        <td><%= space.cnc_router  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
-        <td><%= space.sewing_maching  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
-        <td><%= space.microcontroller_library  ? image_tag "check.jpg", width: "10", height: "10": image_tag "empty.jpg", width: "10", height: "10" %></td>
-
-        <td><%= link_to 'Show', space %></td>
+        <td>
+          <% if space.laser_cutter %>
+            <%= image_tag "check.jpg", width: 15, height: 15  %>
+          <% else %>
+           <%= image_tag "empty.jpg", width: 15, height: 15  %>
+          <% end %>
+       </td>
+        <td>
+          <% if space.three_d_printer  %>
+            <%= image_tag "check.jpg", size: "15"  %>
+          <% else %>
+           <%= image_tag "empty.jpg", size: "15" %>
+          <% end %>
+       </td>
+        <td>
+          <% if space.cnc_router  %>
+            <%= image_tag "check.jpg", size: "15"  %>
+          <% else %>
+           <%= image_tag "empty.jpg", size: "15" %>
+          <% end %>
+       </td>
+        <td>
+          <% if space.sewing_maching  %>
+            <%= image_tag "check.jpg", size: "15"  %>
+          <% else %>
+           <%= image_tag "empty.jpg", size: "15" %>
+          <% end %>
+       </td>
+        <td>
+          <% if space.microcontroller_library  %>
+            <%= image_tag "check.jpg", size: "15"  %>
+          <% else %>
+           <%= image_tag "empty.jpg", size: "15" %>
+          <% end %>
+       </td>
+        <td>
+          <%= link_to 'Show', space %></td>
         </td>
       </tr>
     <% end %>
