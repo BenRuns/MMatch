@@ -25,7 +25,6 @@
 capybara-*.html
 .rspec
 .rvmrc
-/db/*.sqlite3
 /public/system/*
 /public/sitemap*.xml
 /coverage/
