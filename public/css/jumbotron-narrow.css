@@ -82,7 +82,16 @@ body {
  
   border-radius: 10px;
   margin: 5px;
-  
+}
+  .designstages {
+    margin-top: 40px;
+
+  }
+  .thinker {
+    text-align: right;
+    width: 100%;
+    color: blue;
+  }
 
   }
   .processhead {
