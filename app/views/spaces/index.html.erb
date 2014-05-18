@@ -62,11 +62,11 @@
         <td><%= space.name %></td>
         <td><%= space.city %></td>
         <td><%= space.state %></td>
-        <td><%= space.laser_cutter %></td>
-        <td><%= space.three_d_printer %></td>
-        <td><%= space.cnc_router %></td>
-        <td><%= space.sewing_maching %></td>
-        <td><%= space.microcontroller_library %></td>
+        <td><%= space.laser_cutter ? "yes" : "no"  %></td>
+        <td><%= space.three_d_printer  ? "yes" : "no" %></td>
+        <td><%= space.cnc_router  ? "yes" : "no" %></td>
+        <td><%= space.sewing_maching  ? "yes" : "no" %></td>
+        <td><%= space.microcontroller_library  ? "yes" : "no" %></td>
 
         <td><%= link_to 'Show', space %></td>
         </td>
