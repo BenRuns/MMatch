@@ -17,13 +17,12 @@ class SpacesController < ApplicationController
     microcontroller_library = params[:microcontroller_library].present?
     # state = params[:state] if !params[:state].blank?
     # city = params[:city] if !params[:city].blank?
-    @spaces = Space.where(
-            laser_cutter: laser_cutter,
-            three_d_printer: three_d_printer,
-            cnc_router: cnc_router,
-            sewing_maching: sewing_maching,
-            microcontroller_library: microcontroller_library
-      )
+    @spaces = Space.all
+    @spaces = @spaces.where(laser_cutter: laser_cutter) if laser_cutter
+    @spaces = @spaces.where(three_d_printer: three_d_printer) if three_d_printer
+    @spaces = @spaces.where(cnc_router: cnc_router) if cnc_router
+    @spaces = @spaces.where(sewing_maching: sewing_maching) if sewing_maching
+    @spaces = @spaces.where(microcontroller_library: microcontroller_library) if microcontroller_library
   end
 
   # GET /spaces/1
