@@ -3,9 +3,16 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.designPhoto {
-
-	height:170;
-	width: 170;
+.frontlogo{
+	display: block;
+	
+	border-radius: 5px;
 	margin: auto;
+}
+.jumbotron {
+	background: #1596cb;
+}
+.middle {
+	display: block;
+	background: green;
 }
