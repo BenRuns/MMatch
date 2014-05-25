@@ -8,21 +8,29 @@ body {
 	width: 392;
 	height: 92px;
 	text-align: center;
-	font-size: 50px;
+	font-size: 3.125em;
 	color:white;
 	text-shadow: 1px 1px 1px #888;
 	text-align: center;
-	text-decoration: underline;
+	
 	background: #1596cb;
-	padding: 0;
+	padding: 5px;
 	font-variant:small-caps;
 	font-weight: bold;
+	white-space: nowrap;
 
 
 	border-radius: 5px;
 	margin: auto;
 	box-shadow: inset 5px -2px 5px black;
 
+}
+
+#logowords {
+	height: 95%;
+	background: #1596cb;
+	display: inline-block;
+	text-decoration: underline;
 }
 .FrontIcon{
 	height: 200px;
@@ -31,15 +39,13 @@ body {
 }
 .jumbotron {
 	background:-webkit-gradient(radial, center center, 0, center center, 460, from(#000), to(#1596cb));
-
+	background:-moz-radial-gradient(#000,#1596cb);
 }
 .middle {
 
 	background: green;
 }
-.container{
-	width: 970px !important;
-}
+
 .row h2{
 	background: #1596cb;
 	border-radius: 5px;
@@ -76,3 +82,8 @@ height:30px;
 .navbar-brand a {
 	color:white;
 }
+.col-md-4 h2{
+	text-align: left;
+	padding-left: 5px;
+}
+
