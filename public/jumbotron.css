@@ -6,38 +6,43 @@ body {
 .frontlogo{
 	display: block;
 	width: 392;
-	height: 92px;
+	max-height: 50vh;
 	text-align: center;
 	font-size: 3.125em;
 	color:white;
 	text-shadow: 1px 1px 1px #888;
 	text-align: center;
+	text-decoration: underline;
 	
 	background: #1596cb;
 	padding: 5px;
 	font-variant:small-caps;
 	font-weight: bold;
-	white-space: nowrap;
-
-
+	/*white-space: nowrap;*/
 	border-radius: 5px;
 	margin: auto;
 	box-shadow: inset 5px -2px 5px black;
 
 }
-.mobilelogo {
-
-	width:100%;
-	height: auto;
-	margin:auto;
+.mobilelogo{
+	background: none;
+	box-shadow: none;
 }
 
+
 #logowords {
-	height: 95%;
+	position: relative;
+
+	
+	height: 100%;
+	padding: 10px;
+	border-radius: 5px;
 	background: #1596cb;
 	display: inline-block;
 	text-decoration: underline;
+	box-shadow: inset 5px -2px 5px black;
 }
+
 .FrontIcon{
 	height: 200px;
 	margin-bottom:-20px;
