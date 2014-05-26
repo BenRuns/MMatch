@@ -4,9 +4,10 @@ body {
   padding-bottom: 20px;
 }
 .frontlogo{
+	
 	display: block;
 	width: 392;
-	max-height: 50vh;
+	max-height: 60vh;
 	text-align: center;
 	font-size: 3.125em;
 	color:white;
@@ -31,6 +32,7 @@ body {
 
 
 #logowords {
+	width: 100%;
 	position: relative;
 
 	
@@ -54,7 +56,7 @@ body {
 }
 
 .row h2{
-	margin: 5%;
+	 
 	background: #1596cb;
 	border-radius: 5px;
 	color:white;
@@ -66,10 +68,7 @@ body {
 
 
 }
-.row p{
-	margin: 5%;
 
-}
 .navbar-fixed-top {
 height:30px;
 }
