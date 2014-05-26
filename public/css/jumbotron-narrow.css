@@ -67,6 +67,7 @@ body {
   .footer {
     padding-right: 0;
     padding-left: 0;
+
   }
   /* Space out the masthead */
   .header {
@@ -76,37 +77,44 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/* Not part of original template */
   .designPhoto, .explanation{
 
   max-height: 100%;
   margin: 15px;
  
   border-radius: 10px;
+  box-shadow: 2px 3px 5px #888888;
   
 }
   .designstages {
+    display: block;
     margin-top: 40px;
 
 
   }
   .explanation{
-    padding:5px;
+    padding:15px;
+    margin-left: 5px;
     margin: auto;
 
     background-color: rgba(255,255,255, .8)
   }
 
 
-  }
   .processhead {
-    width:100%;
+    
+
+    max-width:100%;
     border-radius: 10px;
     box-shadow: 2px 3px 5px #888888;
     
-  }
-  .designPhoto, .explanation{
-    box-shadow: 2px 3px 5px #888888;
-  }
+}
+  .designPhoto{
+  margin-left: -7px;
+}
   .navbar-fixed-top {
 height:30px;
 }
