@@ -1,0 +1,74 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.frontlogo{
+	display: block;
+	width: 392;
+	max-height: 60vh;
+	text-align: center;
+	font-size: 3.125em;
+	color:white;
+	text-shadow: 1px 1px 1px #888;
+	text-align: center;
+	text-decoration: underline;
+
+	background: #1596cb;
+	padding: 5px;
+	font-variant:small-caps;
+	font-weight: bold;
+	/*white-space: nowrap;*/
+	border-radius: 5px;
+	margin: auto;
+	box-shadow: inset 5px -2px 5px black;
+}
+
+.mobilelogo{
+	background: none;
+	box-shadow: none;
+}
+
+#logowords {
+	width: 100%;
+	position: relative;
+
+	height: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	background: #1596cb;
+	display: inline-block;
+	text-decoration: underline;
+	box-shadow: inset 5px -2px 5px black;
+}
+
+.FrontIcon {
+	height: 200px;
+	margin-bottom:-20px;
+	box-shadow: none;
+}
+
+.jumbotron {
+	background:-webkit-gradient(radial, center center, 0, center center, 460, from(#000), to(#1596cb));
+	background:-moz-radial-gradient(#000,#1596cb);
+}
+
+.row h2 {
+	background: #1596cb;
+	border-radius: 5px;
+	color:white;
+	text-shadow: 1px 1px 1px #888;
+	text-align: center;
+	box-shadow: 2px 3px 5px #888888;
+	box-shadow: inset 3px -2px 5px rgba(8,8,8,.20);
+	font-variant:small-caps;
+}
+
+.navbar-fixed-top {
+ height:30px;
+}
+
+.navbar-brand a {
+	color:white;
+}
