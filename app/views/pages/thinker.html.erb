@@ -1,12 +1,14 @@
 <div class="container">
   <div class="jumbotron designstages">
-    <img src="asset/DesignProcessIcon.png" alt"the design proccess" class="processhead">
+    <%= image_tag 'DesignProcessIcon.png',
+      alt: 'the design proccess', class: 'processhead' %>
   </div>
 
   <div class="row marketing">
     <div class="col-lg-12 ">
       <div class="col-lg-6 hidden-xs">
-        <img src="asset/NapkinIcon.png" class="designPhoto"  alt="Idea Written on a Cocktail Napkin" >
+        <%= image_tag 'NapkinIcon.png', class: 'designPhoto',
+          alt: 'Idea Written on a Cocktail Napkin' %>
       </div>
       <div class="col-lg-6 explanation">
         <h4>Develop</h4>
@@ -16,7 +18,7 @@
     <div class="col-lg-12 ">
       <div class="col-lg-6 hidden-xs">
         <a href="http://mmatch.herokuapp.com/spaces">
-          <img src="asset/BlueprintIcon.png" class="designPhoto" alt="design blueprints" >
+          <%= image_tag 'BlueprintIcon.png', class:'designPhoto', alt:'design blueprints' %>
         </a>
       </div>
       <div class="col-lg-6 explanation">
@@ -26,7 +28,7 @@
     </div>
     <div class="col-lg-12 ">
       <div class="col-lg-6 hidden-xs">
-        <img src="asset/BatchProduction.png" class="designPhoto" alt="Batch  " >
+        <%= image_tag 'BatchProduction.png', class: 'designPhoto', alt: 'Batch Production' %>
       </div>
       <div class="col-lg-6 explanation">
         <h4>Production</h4>
@@ -34,16 +36,11 @@
           Maker Match can take your finished workable prototype, a blueprint or a 3D printer schematic
           and find a reliable maker that can manufacture your product in scalable batch orders.
         </p>
-        </div>
       </div>
+    </div>
 </div> <!-- /container -->
 
-<div class="footer">
-<p>
-<a href="https://www.facebook.com/maker.match"><img src="./asset/facebook.png"></img></a>
-<a href="https://www.linkedin.com/company/maker-match"><img src="./asset/linked-in.png"></img></a>
-<a href="https://twitter.com/MakerMatch1"><img src="./asset/twitter.png"></img></a> &copy; MakerMatch 2014</p>
-</div>
+<%= render 'layouts/footer' %>
 
 
 <!-- Bootstrap core JavaScript
