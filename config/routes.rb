@@ -2,9 +2,9 @@ MakerMatch::Application.routes.draw do
   resources :spaces
   resources :makers
 
-  get "search" => 'spaces#search'
-  get "pages/home"
-  get "pages/about"
+  get 'search' => 'spaces#search'
+  get 'pages/home'
+  get 'pages/about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
