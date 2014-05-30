@@ -3,8 +3,8 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-.frontlogo{
 
+.frontlogo{
   display: block;
   width: 392;
   max-height: 60vh;
@@ -23,18 +23,16 @@ body {
   border-radius: 5px;
   margin: auto;
   box-shadow: inset 5px -2px 5px black;
-
 }
+
 .mobilelogo{
   background: none;
   box-shadow: none;
 }
 
-
 #logowords {
   width: 100%;
   position: relative;
-
 
   height: 100%;
   padding: 10px;
@@ -45,18 +43,18 @@ body {
   box-shadow: inset 5px -2px 5px black;
 }
 
-.FrontIcon{
+.FrontIcon {
   height: 200px;
   margin-bottom:-20px;
   box-shadow: none;
 }
+
 .jumbotron {
   background:-webkit-gradient(radial, center center, 0, center center, 460, from(#000), to(#1596cb));
   background:-moz-radial-gradient(#000,#1596cb);
 }
 
-.row h2{
-
+.row h2 {
   background: #1596cb;
   border-radius: 5px;
   color:white;
@@ -65,12 +63,10 @@ body {
   box-shadow: 2px 3px 5px #888888;
   box-shadow: inset 3px -2px 5px rgba(8,8,8,.20);
   font-variant:small-caps;
-
-
 }
 
 .navbar-fixed-top {
-height:30px;
+ height:30px;
 }
 
 .navbar-brand a {
