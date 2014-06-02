@@ -7,7 +7,7 @@ body {
 .frontlogo{
   display: block;
   width: 392;
-  max-height: 60vh;
+  /*max-height: 60vh;*/
   text-align: center;
   font-size: 3.125em;
   color:white;
