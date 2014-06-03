@@ -7,7 +7,6 @@ body {
 .frontlogo{
   display: block;
   width: 392;
-  /*max-height: 60vh;*/
   text-align: center;
   font-size: 3.125em;
   color:white;
@@ -16,10 +15,10 @@ body {
   text-decoration: underline;
 
   background: #1596cb;
-  padding: 5px;
+  padding: 20px;
   font-variant:small-caps;
   font-weight: bold;
-  /*white-space: nowrap;*/
+  white-space: nowrap;
   border-radius: 5px;
   margin: auto;
   box-shadow: inset 5px -2px 5px black;
@@ -30,15 +29,16 @@ body {
   box-shadow: none;
 }
 
-#logowords {
+.logowords {
   width: 100%;
   position: relative;
+  white-space: nowrap;
 
   height: 100%;
-  padding: 10px;
+  
   border-radius: 5px;
   background: #1596cb;
-  display: inline-block;
+  display: inline;
   text-decoration: underline;
   box-shadow: inset 5px -2px 5px black;
 }
@@ -65,10 +65,10 @@ body {
   font-variant:small-caps;
 }
 
-.navbar-fixed-top {
+/*.navbar-fixed-top {
   height:30px;
 }
 
 .navbar-brand a {
   color:white;
-}
+}*/
