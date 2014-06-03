@@ -51,7 +51,7 @@ body {
   box-shadow: none;
 }
 
-.jumbotron {
+.front{
   background:-webkit-gradient(radial, center center, 0, center center, 460, from(#000), to(#1596cb));
   background:-moz-radial-gradient(#000,#1596cb);
 }
