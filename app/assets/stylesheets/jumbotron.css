@@ -31,8 +31,10 @@ body {
 
 .logowords {
   width: 100%;
-  position: relative;
-  white-space: nowrap;
+ /* position: relative;*/
+ line-height: 100%;
+  white-space: normal;
+ /*ord-wrap:normal;*/
 
   height: 100%;
   
