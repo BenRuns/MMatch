@@ -1,14 +1,17 @@
 <footer>
-<div >
+<hr>
+<div class="col-md-offset-4 img-responsive" >
   <p>
-    <a href="https://www.facebook.com/maker.match">
-      <%= image_tag 'facebook.png' %>
-    </a>
+   <!--  <a href="https://www.facebook.com/maker.match"> -->
+      <%= link_to image_tag('facebook.png', class: "btn btn-default" ), "https://www.facebook.com/maker.match" %>
+      <%= link_to image_tag('linked-in.png', class: "btn btn-default" ), "https://www.linkedin.com/company/maker-match" %>
+      <%= link_to image_tag('twitter.png', class: "btn btn-default" ), "https://twitter.com/MakerMatch1" %>
+<!--     </a>
     <a href="https://www.linkedin.com/company/maker-match">
       <%= image_tag 'linked-in.png' %>
     </a>
     <a href="https://twitter.com/MakerMatch1">
-      <%= image_tag 'twitter.png' %>
+      <%= image_tag 'twitter.png', class: "image" %> -->
     </a> &copy; MakerMatch 2014
   </p>
   </div>
