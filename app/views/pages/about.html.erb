@@ -1,2 +1,56 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<!-- <h1>Pages#about</h1>
+<p>Find me in app/views/pages/about.html.erb</p> -->
+<div class="jumbotron front">
+  <div class="container">
+    <%= image_tag 'GroupPhoto.jpg', class: 'img-responsive col-md-12', alt: 'Maker Match Icon' %>
+
+  </div>
+</div>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+
+	<p>
+	Most of our team met through Jigsaw Renaissance, a Seattle makerspace. Our idea goes back to a proposal from Budi Mulyo in 2012 to create a one-stop shop for makers and makerspaces.
+	
+	As we move forward with this idea, we need people and organizations to provide feedback and create a marketing buzz. We are discussing our ideas and plans with makers, makerspaces and people and businesses that work with makers. 
+	We want to help Makers be successful. 
+
+	As we move forward with this idea, we need people and organizations to provide feedback and create a marketing buzz. We are discussing our ideas and plans with makers, makerspaces and people and businesses that work with makers. 
+	</p>
+
+</div>
+	<div class="col-md-8 col-md-offset-2">
+		<p>
+		<div>
+
+		 Our team includes: Budi Mulyo, Ben Patterson, Laurent Brown and Mike Taylor.
+		</div>
+
+		<div>
+		 Budi is a serial entrepreneur, robot enthusiast, board member at jigsaw rennasaince 
+		</div>
+
+		<div>
+		 Ben is a MOOC–taught developer and Jigsaw Rennasaince member.
+		</div>
+
+		<div>
+		 Laurent is an engineer/artist/coder and Jigsaw Rennasaince member.
+		</div>
+
+		<div>
+		 Mike is a Ruby on Rails developer and joined the team at Angelhack
+		</div>
+
+
+
+	</div>
+
+	<div class="col-md-3 col-md-offset-4">
+
+	Please send inquires to 
+	<%= mail_to 'makermatch@jigsawrenaissance.org' %>
+	</div>
+</div>
+
+  <%= render 'layouts/footer' %>
