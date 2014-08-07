@@ -20,8 +20,10 @@ end
 
 
 group :test do
+  gem 'cucumber-rails', :require => false
   gem 'capybara', '~> 2.4.1'
   gem 'shoulda-matchers', '~> 2.6.2'
+  gem 'database_cleaner'
   gem 'simplecov', :require => false
 end
 # Use SCSS for stylesheets
