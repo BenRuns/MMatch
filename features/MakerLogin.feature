@@ -15,31 +15,16 @@ Background: Some makers already exist
 
 
 
-Scenario: Signing up with good data
+Scenario: Signing up with complete data
 	Given I am on the home page
-	And click link Sign Up
-	And fill in "First Name" with "Al"
-	And fill in "Last Name" with "Harrington"
-	And fill in "Username" with "WackyWild"
-	And fill in "Email" with "tube@man.com"
-	And fill in "Password" with "fake123"
-	And fill in "Password Confirmation" with "fake123"
-	And check box "agree"
-	And hit "submit"
-	Then I should see "Welcome Al Harrington"
+	And sign up with complet data with "Email" as "tube@man.com"
+	Then I should see "Welcome"
 
 
 Scenario: Signing up with duplicate email
 	Given I am on the home page
-	And click link Sign Up
-	And fill in "First Name" with "Al"
-	And fill in "Last Name" with "Harrington"
-	And fill in "Username" with "WackyWild"
-	And fill in "Email" with "so@cool.com "
-	And fill in "Password" with "fake123"
-	And fill in "Password Confirmation" with "fake123"
-	And check box "agree"
-	And hit "submit"
+	And sign up with "Email" as "so@cool.com "
+	Then I should see not "Welcome"
 	Then I should see "There is already an account associated with that email"
 
 
