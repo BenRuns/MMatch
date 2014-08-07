@@ -17,13 +17,13 @@ Background: Some makers already exist
 
 Scenario: Signing up with complete data
 	Given I am on the home page
-	And sign up with complet data with "Email" as "tube@man.com"
+	And sign up with complete data with "Email" as "tube@man.com"
 	Then I should see "Welcome"
 
 
 Scenario: Signing up with duplicate email
 	Given I am on the home page
-	And sign up with "Email" as "so@cool.com "
+	And sign up with complete data with "Email" as "so@cool.com "
 	Then I should see not "Welcome"
 	Then I should see "There is already an account associated with that email"
 
