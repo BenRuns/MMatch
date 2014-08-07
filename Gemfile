@@ -6,13 +6,23 @@ gem 'rails', '4.0.3'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  	gem 'better_errors'
+  	gem 'binding_of_caller'
+  	gem 'rspec-rails', '~> 3.0.2'
+  	gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :production  do
 	gem 'pg'
 	gem 'rails_12factor'
+end
+
+
+
+group :test do
+  gem 'capybara', '~> 2.4.1'
+  gem 'shoulda-matchers', '~> 2.6.2'
+  gem 'simplecov', :require => false
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
