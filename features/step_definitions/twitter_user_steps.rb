@@ -22,13 +22,15 @@ end
 
 
 Given(/^have logged in to "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+   visit "/auth/#{arg1.downcase}"
 
 end
 
 Given(/^have not logged in to "(.*?)"$/) do |arg1|
-
+ # express the regexp above with the code you wish you had
+  #visit "/auth/#{arg1.downcase}"
+  #expect(auth).to eq(arg1)# express the regexp above with the code you wish you had
   pending
-
+  
 end
 
