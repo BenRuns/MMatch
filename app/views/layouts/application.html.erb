@@ -25,6 +25,12 @@
   <body>
 
     <%= render 'layouts/navbar_top' %>
+    <% flash.each do |type, message | %>
+    <div class="alert flash <%= type %>">
+    <%= message %>
+    </div>
+
+    <% end %>
 
     <%= yield %>
 
