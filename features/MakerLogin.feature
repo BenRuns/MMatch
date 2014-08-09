@@ -1,3 +1,6 @@
+
+
+@omniauth_test
 Feature: Maker Login and Sign Up
 
   As a user of makermatch
@@ -16,13 +19,13 @@ Background: Some makers already exist
 
 
 Scenario: Signing up with complete data
-	Given I am on the home page
+	Given PENDING  I am on the home page
 	And sign up with complete data with "Email" as "tube@man.com"
 	Then I should see "Welcome"
 
 
 Scenario: Signing up with duplicate email
-	Given I am on the home page
+	Given PENDING I am on the home page
 	And sign up with complete data with "Email" as "so@cool.com "
 	Then I should see not "Welcome"
 	Then I should see "There is already an account associated with that email"
