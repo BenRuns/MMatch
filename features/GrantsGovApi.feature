@@ -1,4 +1,4 @@
-pending
+
 
 Feature: Connecting to an Grants.gov
 
@@ -6,7 +6,7 @@ Given that I am logged in and have created a project
 
 
 
-Scenario: I have filled out a complete project and look for grants
+Scenario: PENDING have filled out a complete project and look for grants
 
 	When I am on my completely filled out project1 page
 	And I click "check for grants"

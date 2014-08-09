@@ -6,12 +6,10 @@ Feature: Login with twitter handle
   So that I can fill my brain with other things
   I want to use twitter to login to Maker Match
 
-Scenario: Logging in while logged in to twitter
+Scenario: Logging in with twitter
 
   Given I go to the home page 
-  And have logged in to "Twitter" 
-  And  I click "Login" and I press "Twitter"
-  And  I click "Allow"
+  And  I click "Sign in with Twitter"
   Then I should see "Welcome"
   And I should not see "There was an error logging in"
 
