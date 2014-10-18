@@ -1,0 +1,55 @@
+<div class="col-md-2 col-md-offset-1">
+  <%= image_tag 'LaserCutterIcon.png', size: "200", class: 'img-thumbnail img-thumbnail-tools', alt: 'laser cutter graphic' %>
+  <div class="input-group">
+    <div class="checkbox">
+      <%= label_tag(:laser_cutter) do %>
+        <%= check_box_tag(:laser_cutter, true, false) %>
+        Laser Cutter
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="col-md-2">
+  <%= image_tag 'ThreeDPrinterIcon.png', size: "200", class: 'img-thumbnail img-thumbnail-tools', alt: 'three dimensional printer graphic' %>
+  <div class="input-group">
+    <div class="checkbox">
+      <%= label_tag(:three_d_printer) do %>
+        <%= check_box_tag(:three_d_printer, true, false) %>
+        3D Printer
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="col-md-2">
+  <%= image_tag 'CncrouterIcon.png', size: "200", class: 'img-thumbnail img-thumbnail-tools', alt: 'cnc router graphic' %>
+  <div class="input-group">
+    <div class="checkbox">
+      <%= label_tag(:cnc_router) do %>
+        <%= check_box_tag(:cnc_router, true, false) %>
+        CNC Router
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="col-md-2">
+  <%= image_tag 'SewMachineIcon.png', size: "200", class: 'img-thumbnail img-thumbnail-tools', alt: 'sewing machine icon graphic' %>
+  <div class="input-group">
+    <div class="checkbox">
+      <%= label_tag(:sewring_machine) do %>
+        <%= check_box_tag(:sewring_machine, true, false) %>
+        3D Printer
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="col-md-2">
+  <%= image_tag 'MicrocontrollerLibraryIcon.png', size: "200", class: 'img-thumbnail img-thumbnail-tools', alt: 'microcontroller libry graphic' %>
+  <div class="input-group">
+    <div class="checkbox">
+      <%= label_tag(:microcontroller_library) do %>
+        <%= check_box_tag(:microcontroller_library, true, false) %>
+        Microcontroller Library
+      <% end %>
+    </div>
+  </div>
+</div>
