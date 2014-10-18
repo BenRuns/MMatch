@@ -330,6 +330,10 @@ img {
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
+
+  &.img-thumbnail-tools {
+    border: none;
+  }
 }
 .img-circle {
   border-radius: 50%;
