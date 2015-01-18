@@ -330,6 +330,10 @@ img {
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
+
+  &.img-thumbnail-tools {
+    border: none;
+  }
 }
 .img-circle {
   border-radius: 50%;
@@ -2373,12 +2377,16 @@ input[type="button"].btn-block {
   -webkit-transition: height .35s ease;
           transition: height .35s ease;
 }
+
 @font-face {
   font-family: 'Glyphicons Halflings';
-
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: font-url('glyphicons-halflings-regular.eot');
+  src: font-url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  font-url('glyphicons-halflings-regular.woff') format('woff'),
+  font-url('glyphicons-halflings-regular.ttf') format('truetype'),
+  font-url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
 .glyphicon {
   position: relative;
   top: 1px;

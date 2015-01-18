@@ -1,83 +1,46 @@
 <div class="container-fluid">
+
   <div class="row">
-<!--     <div class="col-sm-3 col-md-2 sidebar">
-      <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">Overview</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="">Nav item</a></li>
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-        <li><a href="">More navigation</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-      </ul>
-    </div> -->
-
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-1 main">
-      <h1 class="page-header">Search our spaces:</h1>
       <%= form_tag("search", method: "get") do %>
-      <div class="row placeholders">
-        <div class="col-xs-6 col-sm-2 placeholder">
-          <%= image_tag 'LaserCutterIcon.png', size: "200", class: 'img-responsive', alt: '' %>
-          <!-- <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail"> -->
-          <%= label_tag(:laser_cutter, "Laser Cutter") %>
-          <%= check_box_tag(:laser_cutter, true) %>
-        </div>
-        <div class="col-xs-6 col-sm-2 placeholder">
-          <%= image_tag 'ThreeDPrinterIcon.png', size: "200", class: 'img-responsive', alt: '' %>
-          <%= label_tag(:three_d_printer, "3D Printer") %>
-          <%= check_box_tag(:three_d_printer, true) %>
-        </div>
-        <div class="col-xs-6 col-sm-2 placeholder">
-          <%= image_tag 'CncrouterIcon.png', size: "200", class: 'img-responsive', alt: '' %>
-          <%= label_tag(:cnc_router, "CNC Router") %>
-          <%= check_box_tag(:cnc_router, true) %>
-        </div>
-        <div class="col-xs-6 col-sm-2 placeholder">
-          <%= image_tag 'SewMachineIcon.png', size: "200", class: 'img-responsive', alt: '' %>
-          <%= label_tag(:sewing_maching, "Sewing Machine") %>
-          <%= check_box_tag(:sewing_maching, true) %>
-        </div>
-        <div class="col-xs-6 col-sm-2 placeholder">
-          <%= image_tag 'MicrocontrollerLibraryIcon.png', size: "200", class: 'img-responsive', alt: '' %>
-          <%= label_tag(:microcontroller_library, "Microcontroller Lib") %>
-          <%= check_box_tag(:microcontroller_library, true) %>
-        </div>
-      </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <div class="col-xs-6 col-sm-3 placeholder">
-          <%= label_tag(:q, "State:") %>
-          <%= text_field_tag(:state) %>
-        </div>
-        <div class="col-xs-6 col-sm-3 placeholder">
-          <%= label_tag(:q, "City:") %>
-          <%= text_field_tag(:city) %>
-        </div>
-        <div class="col-xs-6 col-sm-3 placeholder">
-          <br />
-          <%= submit_tag("Search") %>
-        </div>
-      </div>
-      <% end %>
 
-      <h2 class="sub-header">Maker Spaces:</h2>
-      <div class="table-responsive"> <!-- Begin table-responsive-->
-        <%= render 'table' %>
-      </div>  <!-- End table-responsive-->
+        <div class="row">
+          <%= render 'tools' %>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <%= label_tag(:q, "City:") %>
+              <%= text_field_tag(:city, nil, placeholder: 'Seattle') %>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <%= label_tag(:q, "State:") %>
+              <%= text_field_tag(:state, nil, placeholder: 'WA') %>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3">
+              <br />
+              <%= submit_tag("Search", class: 'btn') %>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
     </div>
   </div>
-  <div class="footer">
-  <p>&copy; MakerMatch 2014</p>
-</div>
-</div>
 
+  <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 class="sub-header">Maker Spaces:</h2>
+        <%= render 'table' %>
+      </div>
+    </div>
+  </div>
 
-<%= link_to 'New Space', new_space_path %>
+  <div class="row">
+    <div class="col-md-12 footer">
+      <p class="text-center">&copy; MakerMatch 2014</p>
+    </div>
+  </div>
+
+</div>

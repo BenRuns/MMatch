@@ -19,40 +19,20 @@
         </td>
         <td><%= space.city %></td>
         <td><%= space.state %></td>
-        <td>
-          <% if space.laser_cutter %>
-            <%= image_tag "check.jpg", width: 15, height: 15  %>
-          <% else %>
-           <%= image_tag "empty.jpg", width: 15, height: 15  %>
-          <% end %>
-       </td>
-        <td>
-          <% if space.three_d_printer  %>
-            <%= image_tag "check.jpg", size: "15"  %>
-          <% else %>
-           <%= image_tag "empty.jpg", size: "15" %>
-          <% end %>
-       </td>
-        <td>
-          <% if space.cnc_router  %>
-            <%= image_tag "check.jpg", size: "15"  %>
-          <% else %>
-           <%= image_tag "empty.jpg", size: "15" %>
-          <% end %>
-       </td>
-        <td>
-          <% if space.sewing_maching  %>
-            <%= image_tag "check.jpg", size: "15"  %>
-          <% else %>
-           <%= image_tag "empty.jpg", size: "15" %>
-          <% end %>
-       </td>
-        <td>
-          <% if space.microcontroller_library  %>
-            <%= image_tag "check.jpg", size: "15"  %>
-          <% else %>
-           <%= image_tag "empty.jpg", size: "15" %>
-          <% end %>
+        <td class="text-center">
+          <span class="glyphicon glyphicon-ok <%= 'hidden' unless space.laser_cutter? %>"></span>
+        </td>
+        <td class="text-center">
+          <span class="glyphicon glyphicon-ok <%= 'hidden' unless space.three_d_printer? %>"></span>
+        </td>
+        <td class="text-center">
+          <span class="glyphicon glyphicon-ok <%= 'hidden' unless space.cnc_router? %>"></span>
+        </td>
+        <td class="text-center">
+          <span class="glyphicon glyphicon-ok <%= 'hidden' unless space.sewing_maching? %>"></span>
+        </td>
+        <td class="text-center">
+          <span class="glyphicon glyphicon-ok <%= 'hidden' unless space.microcontroller_library? %>"></span>
        </td>
       </tr>
     <% end %>
