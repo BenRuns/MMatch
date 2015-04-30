@@ -1,6 +1,10 @@
 MakerMatch::Application.routes.draw do
-  get "/auth/:provider/callback" => "sessions#create"
-  get "/signout" => "sessions#destroy", :as => :signout
+  mount RailsAdmin::Engine => '/mmadmin', as: 'rails_admin'
+  devise_for :users
+  devise_scope :user do
+    post 'users/sign_out' => "devise/sessions#destroy"
+  end
+
   resources :spaces
   resources :makers
 

@@ -24,9 +24,9 @@
             <ul class="nav navbar-nav navbar-right navbar-inverse">
             <% if current_user %>
             <li><%= link_to "#{current_user.name}", "#" %></li>
-            <li><%= link_to "Sign Out", signout_path %></li>
+            <li><%= button_to "Sign Out", destroy_user_session_path %></li>
             <% else %>
-            <li><%= link_to "Sign in with Twitter", "/auth/twitter" %></li>
+            <li><%= link_to "Sign In", user_session_path %></li>
             <% end %>
               
               <li><a href="/pages/about">About Us</a></li>
